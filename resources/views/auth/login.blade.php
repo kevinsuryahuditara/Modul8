@@ -23,8 +23,8 @@
                 @csrf
                 <hr class="my-4">
             <div class="form-outline mb-4">
-            <label class="form-label" for="email">{{ __('Email Address') }}</label>
-              <input type="email" id="email" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Masukan Email anda" />
+            <label class="form-label" for="email">{{ __('Email') }}</label>
+              <input type="email" id="email" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Input Email Anda" />
               @error('email')
               <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
@@ -34,7 +34,7 @@
 
             <div class="form-outline mb-4">
             <label class="form-label" for="password">{{ __('Password') }}</label>
-              <input type="password" id="password" class="form-control form-control-lg @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Masukan Password" />
+              <input type="password" id="password" class="form-control form-control-lg @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Input Password" />
               @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
